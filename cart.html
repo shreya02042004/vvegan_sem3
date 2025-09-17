@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vvegan...GO GREEN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="logo.jpeg"  alt="Vvegan..GO GREEN">
+    </div>
+    <ul>
+      <li class="item"><a href ="index.html" >home    </a></li>
+      <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+    
+      <div class="dropdown">
+        <button class="dropbtn">Groceries
+        </button>
+        <div class="dropdown-content">
+          <!-- <div class="header">
+            <h2>types of categories</h2>
+          </div>    -->
+          <div class="row">
+            <div class="column">
+              <h3>STAPLES</h3>
+              <a href="#">Lentils & Pulses</a>
+              <a href="#">Flours</a>
+              <a href="#">Masala and spices</a>
+            </div>
+            <div class="column">
+              <h3>BREAKFAST AND BAKERY</h3>
+              <a href="#">Bread & Bun</a>
+              <a href="#">Breakfast foods</a>
+              <a href="#">Pasta</a>
+            </div>
+            <div class="column">
+              <h3>BEVERAGES & SNACKS</h3>
+              <a href="#">Dried Fruits & Nuts</a>
+              <a href="#">Nut Butter</a>
+              <a href="#">Juices & Jams</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="dropdown">
+        <button class="dropbtn">Sweets And Chocolate
+          <!-- <i class="fa fa-caret-down"></i> -->
+        </button>
+        <div class="dropdown-content">
+          <!-- <div class="header">
+            <h2>types of categories</h2>
+          </div>    -->
+          <div class="row">
+            <div class="column">
+              <h3>CHOCOLATES AND CANDY</h3>
+              <a href="#">Dark Chocolates</a>
+              <a href="#">Milk chocolates</a>
+              <a href="#">Marshmallow,Jelly</a>
+            </div>
+            <div class="column">
+              <h3>BISCUITS AND COOKIES</h3>
+              <a href="#">Choco Chips Biscuits</a>
+              <a href="#">Vegan Sugar Cookies</a>
+              <a href="#">Vegan Peanut Butter Cookies</a>
+            </div>
+            <div class="column">
+              <h3>VEGAN CHOCOLATE DESSERTS</h3>
+              <a href="#">Vegan Cake</a>
+              <a href="#">Pudding</a>
+              <a href="#">Doughnuts</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+          <div class="dropdown">
+            <button class="dropbtn">Dairy Alt
+              <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="dropdown-content">
+              <!-- <div class="header">
+                <h2>types of categories</h2>
+              </div>    -->
+              <div class="row">
+                <div class="column">
+                  <h3>PLANT BASED MILK</h3>
+                  <a href="DairyAlt/plantbasedmilk/almondmilk.html">Almond Milk </a>
+                  <a href="#">Coconut Milk</a>
+                  <a href="#">Milk Powder</a>
+                  <a href="#">Cashew Milk</a>
+                </div>
+                <div class="column">
+                  <h3>ICE CREAMS</h3>
+                  <a href="#">Kulfi</a>
+                  <a href="#">Almond Milk Based</a>
+                  <a href="#">Coconut Milk Based</a>
+                  <a href="#">Refined Sugar Free</a>
+                </div>
+                <div class="column">
+                  <h3>PANEER AND CHEESE</h3>
+                  <a href="#">Plain Paneer</a>
+                  <a href="#">Soya Based Paneer</a>
+                  <a href="#">Mozzarella</a>
+                  <a href="#">Cheddar</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Plant Based Meats
+              <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="dropdown-content">
+              <!-- <div class="header">
+                <h2>types of categories</h2>
+              </div>    -->
+              <div class="row">
+                <div class="column">
+                  <h3>DELICACY</h3>
+                  <a href="#">Biryani</a>
+                  <a href="#">Nuggets</a>
+                  <a href="#">Soya chaap</a>
+                </div>
+                <div class="column">
+                  <h3>TYPES OF MEATS</h3>
+                  <a href="#">Chicken</a>
+                  <a href="#">Mutton</a>
+                  <a href="#">Pork</a>
+                </div>
+                <div class="column">
+                  <h3>PLANT BASED</h3>
+                  <a href="#">Mock meat</a>
+                  <a href="#">Soyabean</a>
+                  <a href="#">Frozen meat</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <li class="item"><a href ="#" >About Us   </a></li> 
+          <li class="cart"><a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></li>
+    </ul>
+  </nav>
+  <section>
+  <div id='login-form'class='login-page'>
+    <div class="form-box">
+        <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+            <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+        </div>
+        <form id='login' class='input-group-login'>
+            <input type='text'class='input-field'placeholder='Email Id' required >
+            <input type='password'class='input-field'placeholder='Enter Password' required>
+            <input type='checkbox'class='check-box'><span>Remember Password</span>
+            <button type='submit'class='submit-btn'>Log in</button>
+        </form>
+        <form id='register' class='input-group-register'>
+           <input type='text'class='input-field'placeholder='First Name' required>
+           <input type='text'class='input-field'placeholder='Last Name ' required>
+           <input type='email'class='input-field'placeholder='Email Id' required>
+           <input type='password'class='input-field'placeholder='Enter Password' required>
+           <input type='password'class='input-field'placeholder='Confirm Password' required>
+           <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+           <button type='submit'class='submit-btn'>Register</button>
+        </form>
+    </div>
+</div>
+
+<script>
+var x=document.getElementById('login');
+var y=document.getElementById('register');
+var z=document.getElementById('btn');
+function register()
+{
+x.style.left='-400px';
+y.style.left='50px';
+z.style.left='110px';
+}
+function login()
+{
+x.style.left='50px';
+y.style.left='450px';
+z.style.left='0px';
+}
+</script>
+<script>
+var modal = document.getElementById('login-form');
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+</script>
+</section>
+<section id="cart" class="section-p1">
+  <table width="100%">
+  <thead>
+    <tr>
+        <td>Remove</td>
+        <td>Image</td>
+        <td>Product</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Subtotal</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+
+       
+    </tr>
+  </tbody>
+  </table>
+
+</section>
+</body>
+</html>
